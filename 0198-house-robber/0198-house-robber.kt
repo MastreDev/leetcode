@@ -2,7 +2,7 @@ class Solution {
 
     fun rob(nums: IntArray): Int {
         val n = nums.size
-        if (n < 2) return nums.first()
+        if (n == 1) return nums.first()
         val dp = IntArray(n)
         dp[0] = nums[0]
         dp[1] = maxOf(nums[0], nums[1])
