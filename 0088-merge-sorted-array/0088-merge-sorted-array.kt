@@ -1,13 +1,5 @@
 class Solution {
     fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int): Unit {
-        //check
-        // if(m == 0 || n == 0) return
-        if(n == 0) return
-        if(m == 0) {
-            nums2.copyInto(nums1)
-            return
-        }
-        
         val newArray = IntArray(m + n)
         var insertIndex = 0
         var leftIndex = 0
