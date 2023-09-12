@@ -23,8 +23,8 @@ class Solution {
             } else {
                 newBed.add(current)
             }
+            if(newPlant >= n) break
         }
-        
         return newPlant >= n
     }
 }
