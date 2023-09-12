@@ -2,6 +2,8 @@ class Solution {
     fun canPlaceFlowers(flowerbed: IntArray, n: Int): Boolean {
         val newBed = mutableListOf<Int>()
         val oldBed = mutableListOf<Int>().apply{this.addAll(flowerbed.toList())}
+        
+        if(n == 0) return true
 
         var newPlant = 0
 
